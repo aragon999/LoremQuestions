@@ -12,6 +12,13 @@ class LoremQuestions extends \Shopware\Components\Plugin
         ];
     }
 
+    public function build(ContainerBuilder $container)
+    {
+        // Set plugin path for shopware versions < 5.2.7
+        $container->setParameter('lorem_questions.plugin_dir', $this->getPath());
+        parent::build($container);
+    }
+
     private function registerTemplateDir()
     {
         $this->container->get('Template')->addTemplateDir(
@@ -19,9 +26,11 @@ class LoremQuestions extends \Shopware\Components\Plugin
         );
     }
 
+    /**
+     * Not needed for Shopware versions > 5.2.7
+     */
     public function onGetControllerPath()
     {
-        $this->registerTemplateDir();
         return $this->getPath() . '/Controllers/Frontend/LoremQuestions.php';
     }
 
