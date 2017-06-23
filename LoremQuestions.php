@@ -1,5 +1,8 @@
 <?php
 namespace LoremQuestions;
+
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+
 class LoremQuestions extends \Shopware\Components\Plugin
 {
     public static function getSubscribedEvents()
