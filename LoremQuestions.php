@@ -15,7 +15,7 @@ class LoremQuestions extends \Shopware\Components\Plugin
     private function registerTemplateDir()
     {
         $this->container->get('Template')->addTemplateDir(
-            $this->getPath() . '/resources/Views/'
+            $this->getPath() . '/Resources/views/'
         );
     }
 
@@ -42,6 +42,4 @@ class LoremQuestions extends \Shopware\Components\Plugin
             ]
         ]);
     }
-
-
 }

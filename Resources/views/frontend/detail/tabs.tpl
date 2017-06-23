@@ -1,8 +1,12 @@
 {extends file='parent:frontend/detail/tabs.tpl'}
-{block name="frontend_detail_tabs_navigation_inner" append}
+
+{block name="frontend_detail_tabs_navigation_inner"}
+    {$smarty.block.parent}
     <a href="#" class="tab--link" title="Tab" data-tabName="tab">FAQ</a>
 {/block}
-{block name="frontend_detail_tabs_content_inner" append}
+
+{block name="frontend_detail_tabs_content_inner"}
+    {$smarty.block.parent}
     <div class="tab--container">
         {* Normal title *}
         <div class="tab--header">
