@@ -1,5 +1,6 @@
 <?php
-class Shopware_Controllers_Frontend_Questions extends Enlight_Controller_Action
+
+class Shopware_Controllers_Frontend_Questions extends \Enlight_Controller_Action
 {
     public function preDispatch()
     {

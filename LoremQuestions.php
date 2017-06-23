@@ -34,7 +34,7 @@ class LoremQuestions extends \Shopware\Components\Plugin
      */
     public function onGetControllerPath()
     {
-        return $this->getPath() . '/Controllers/Frontend/LoremQuestions.php';
+        return $this->getPath() . '/Controllers/Frontend/Questions.php';
     }
 
     public function onPostDispatchDetail(\Enlight_Event_EventArgs $args)
