@@ -1,0 +1,2 @@
+# LoremQuestions
+Plugin for Shopware
